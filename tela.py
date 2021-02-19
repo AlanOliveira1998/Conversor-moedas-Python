@@ -1,11 +1,11 @@
 import PySimpleGUI as sg
 
 class TelaPython:
-    def __init__(self)
+    def __init__(self):
         #Layout
         layout = [
-            [sg.Text('Valor em Reais (R$)')],sg.Input()],
-            [sg.text('Valor em Dolares (U$)'),sg.Input],
+            [sg.Text('Valor em Reais (R$)'),sg.Input()],
+            [sg.Text('Valor em Dolares (U$)'),sg.Input()],
             [sg.Button('Converter')]
         ]
         #Janela
@@ -14,7 +14,7 @@ class TelaPython:
         self.Button, self.values = janela.Read()
 
     def iniciar(self):
-    print(self.values)
+        print(self.values)
 
 tela = TelaPython()
 tela.iniciar()
