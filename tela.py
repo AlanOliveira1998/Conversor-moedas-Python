@@ -4,8 +4,8 @@ class TelaPython:
     def __init__(self):
         #Layout
         layout = [
-            [sg.Text('Valor em Reais (R$)'),sg.Input()],
-            [sg.Text('Valor em Dolares (U$)'),sg.Input()],
+            [sg.Text('Valor em Reais (R$)',size=(16,0)),sg.Input(size=(20,0))],
+            [sg.Text('Valor em Dólares (U$)',size=(16,0)),sg.Input(size=(20,0))],
             [sg.Button('Converter')]
         ]
         #Janela
